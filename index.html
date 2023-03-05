@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>健康飲食table</title>
+    <style>
+        html{
+            background-color: beige;
+        }
+        body{
+            width: 1000px;
+            border: 1px solid #000;
+            padding: 20px;
+            transform: translateX(450px);
+            background-color: #fff;
+        }
+        header{
+            text-align: center;
+        }
+        
+        ul{
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            background-color: #eee;
+        }
+        li{
+            font-size: 24px;
+            display: inline-flex;
+        }
+        li a{
+            text-align: center;
+            padding: 16px;
+            color: black;
+            text-decoration: none;
+        }
+        li a:hover{
+            background-color: bisque;
+        }
+        table{
+            width: 100%;
+        }
+        table ,tr,td{
+            border: 1px solid #000;
+            border-collapse: collapse;
+        }
+        td{
+            padding: 10px;
+        }
+        tr:nth-child(even){
+            background-color: #aaa;
+        }
+        tr:nth-child(1){
+            background-color: #000;
+            color: #FFF;
+        }
+
+        #table2{
+            /* text-align: center; */
+            width: 62%;
+        }
+        #table2,#tr2,#td2{
+            font-size: 18px;
+            border: 3px solid #FFCC7B;
+            background-color: #FFF;
+        }
+        #th2{
+            padding: 10px;
+            font-size: 22px;
+            border: 3px solid #FFCC7B;
+            background-color: #F09302;
+        }
+        #td2{
+            text-align: center;
+        }
+        .table22{
+            background-color: #FFCC7B;
+            display: flex;
+            justify-content: center;
+        }
+        footer{
+            margin: 20px;
+            margin-bottom: 0px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>什麼是健康飲食？如何根據科學來吃得健康</h1>
+        <img src="https://askthescientists.com/wp-content/uploads/2019/05/Woman-surrounded-by-healthy-food-AdobeStock_244493466-1.jpg" alt="" width="800px" height="200px">
+    </header>
+    <nav>
+        <!-- <ul>
+            <li><a href="#">健康飲食</a></li>
+            <li><a href="#">健康飲食</a></li>
+            <li><a href="#">健康飲食</a></li>
+            <li><a href="#">健康飲食</a></li>
+            <li><a href="#">健康飲食</a></li>
+            <li><a href="#">健康飲食</a></li>
+        </ul> -->
+    </nav>
+    <section>
+        <h1>健康飲食指南</h1>
+        <table>
+            <tr>
+                <td>食物類別</td>
+                <td>份數</td>
+            </tr>
+            <tr>
+                <td>全穀物</td>
+                <td>每日6-8份</td>
+            </tr>
+            <tr>
+                <td>蔬菜</td>
+                <ul>
+                <td>每日5份以上彩色蔬菜
+                    <li>深綠色葉菜1份以上</li>
+                    <li>1種澱粉類蔬菜（例如：白皮馬鈴薯、玉米、青豆、芭蕉、木薯、綠色利馬豆）</li>
+                </td>
+                </ul>
+            </tr>
+                
+            <tr>
+                <td>水果</td>
+                <ul>
+                    <td>每日3-5份
+                        <li>每週至少含3份漿果類</li>
+                    </td>
+                    </ul>
+            </tr>
+            <tr>
+                <td>各種蛋白質來源</td>
+                <ul>
+                    <td>*以克為計算單位達到您的目標*（見下文）
+                        致力增加植物性蛋白質，包括莢果和豆類、大豆製品（豆腐、豆豉等）、無鹽堅果和種籽
+                        <li>每週最多7顆雞蛋</li>
+                    </td>
+                    </ul>
+            </tr>
+        </table>
+
+        <br>
+    </section>
+    <h1>BMI</h1>
+    <div class="table22">
+        <table id="table2">
+            <tr id="tr2">
+                <th id="th2">成人肥胖定義</th>
+                <th id="th2">身體質量指數(BMI)(kg/m<sup>2</sup>)</th>
+                <th id="th2">腰圍(cm)</th>
+            </tr>
+            <tr id="tr2">
+                <td id="td2">體重過輕</td>
+                <td id="td2">BMI<18.5</td>
+                <td id="td2"></td>
+            </tr>
+            <tr id="tr2">
+                <td id="td2">健康體位</td>
+                <td id="td2">18.5<=BMI<24</td>
+                <td id="td2"></td>
+            </tr>
+            <tr id="tr2">
+                <td id="td2">體位異常</td>
+                <td id="td2">過重：24<=BMI<27<br>
+                    輕度肥胖：27 <= BMI < 30<br>
+                    中度肥胖：30 <= BMI < 35<br>
+                    重度肥胖：BMI >= 35</td>
+                <td id="td2">男性：>= 90 公分<br>
+                    女性：>= 80 公分</td>
+            </tr>
+            <tr id="tr2">
+                <td id="td2" colspan="3" style="background-color: #FFECCE;">
+                    <img class="img-fluid" src="https://health99.hpa.gov.tw/img/exam/bmi_form.png" width="200px" alt="">
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <footer>
+        Copyright © 2020 XXXXXX Inc.
+    </footer>
+</body>
+</html>
